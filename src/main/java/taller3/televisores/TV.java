@@ -75,27 +75,31 @@ public class TV {
 			if (this.canal>0 && this.canal<120) {
 				this.canal ++;
 			}					
-		}
+		}/*
 		else {
 			this.estado = true;
 			if (this.canal>0 && this.canal<120) {
 				this.canal ++;
 			}
-		}		
+		}*/		
 	}
 	
+	public static void setNumTV(int numTV) {
+		TV.numTV = numTV;
+	}
+
 	public void canalDown() {
 		if (this.estado == true) {
 			if (this.canal>1 && this.canal<=120) {
 				this.canal --;
 			}					
-		}
+		}/*
 		else {
 			this.estado = true;
 			if (this.canal>1 && this.canal<=120) {
 				this.canal --;
 			}
-		}
+		}*/
 		
 	}
 	
